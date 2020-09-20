@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: steelblue;
+}
+.outer_shell{
+    margin-top: 50px;
+    margin-left: 35%;
+    background: thistle;
+    height: 425px;
+    border: 2px solid saddlebrown;
+    width: 199px;
+    border-radius: 40px 40px 25px 25px;
+}
+.inner_shell{
+    border: 2px solid saddlebrown;
+    align-content: center;
+    align-items: center;    
+    height: 417px;
+    width: 191.3px;
+    margin: 2px;
+    border-radius: 40px 40px 20px 20px;
+}
+.brand_name{
+    border-bottom: 1px solid white;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    background: black;
+    height: 20px;
+    padding: 5px;
+    width: 181.3px;
+    border-radius: 40px 40px 0px 0px;
+}
+.screen_display{
+    overflow-y: auto;
+    text-align: left;
+    padding: 20px 10px 10px 10px;
+    color: #fff;
+    background: rgb(1, 5, 1);
+    height: 132px;
+    width: 168px;
+    }
+input{
+    border: none;
+    margin-top: 3px;;
+    margin-left: 1px;
+    width: 60px;
+    height: 28px;
+    background: rgb(10, 2, 2);
+    color: rgb(176, 212, 212);
+}
+.input{
+    position: absolute;
+    top: 12.9rem;
+    margin-left: 13px;
+    width: 170px;
+    border: none;
+    border-bottom: 1px solid red;
+    background: none;
+    text-align: center;
+    color: #fff;
+    display: none;
+    
+   
+}
+.input:focus{
+    box-shadow: none;
+}
+input:active{
+    background:  rgb(36, 34, 34);
+}
+textarea{
+    resize: none;
+}
+.loading, .msg{
+    position: absolute;
+    width: 199px;
+    display: flex;
+    top: 9rem;
+    justify-content: center;
+    display: none;
+    color: white;
+    padding: 3px;
+    font-size: 16x;
+    overflow-y: auto;
+}
+i, #airtimeMinus{
+    position: absolute;
+    color: white;
+    top: 5.6rem;
+    margin-left: 10px;
+    font-size: 10px;
+}
+.load{
+    width: 20px;
+    height: 20px;
+    border: 3px solid green;
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 0.5s linear infinite;
+    margin: 5px;
+}
+.loadd{
+    display: flex;
+    color: white;
+}
+.loadd span{
+    padding: 10px;
+    font-size: 14px;
+}
+.anime{
+    animation: animateMe 0s ease forwards,
+                animateMe2 0.7s 3s ease;
+}
+.dial{
+    animation: dial ease-in-out 3s infinite;
+}
+@keyframes spin{
+   0% { transform: rotate(360deg);
+        }
+}
+@keyframes animateMe{
+    
+    100%{ 
+    transform: translateX(0px);
+    font-family: monospace;
+    color: rgb(151, 238, 209);
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 5px 5px 30px rgb(138, 172, 192);
+    }
+}
+@keyframes animateMe2{
+    0%{ 
+    transform: translateX(0px);
+    color: rgb(9, 46, 33);
+    font-size: 0px;
+    opacity: 0;
+    text-shadow: 5px 5px 50px rgb(178, 158, 197);
+    transform: rotate(360deg);
+    opacity: 1;
+    }
+}
+@keyframes dial{
+    0%{
+        transform: translate(0px);
+        color: rgb(243, 236, 236);
+        opacity: 0.5;
+        font-size: 12.5px;
+        font-family: cursive;
+    }
+    100%{
+        color: rgb(219, 219, 180);
+        font-size: 13px;
+        font-family: cursive;
+    }
+    
+}
