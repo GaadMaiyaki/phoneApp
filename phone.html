@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./pics/2.jpg" />
+        <link rel="stylesheet" type="text/css" href="phone.css"/>
+        <link rel="stylesheet" type="text/css" href="./bootstrap/font/fontawesome-5/css/all.css"/>
+        <title>Phone Application</title>
+    </head>
+
+<body>
+    
+    <div class="outer_shell">
+        <div class="faS">
+            <i class="fa fa-battery-half"></i>
+            <i class="fa fa-wifi" style="margin-left: 30px;"></i>
+            <i class="fa fa-database" style="margin-left: 50px;"></i>
+            <div id="airtimeMinus" style= "margin-left: 90px;"></div>
+        </div>
+        <div class="loading" id="loading">
+            <div class="loadd">
+                <div class="load"></div>
+                <span>running USSD code...</span>
+            </div>
+        </div>
+        <div id="ph">
+            <i class="fa fa-phone" style="top: 5rem; margin-left: 25px;"></i>
+        </div>
+        <div class="msg" id="msg">
+        </div>
+        <input class="input" id="input" type="text"/>
+        <div class="inner_shell">
+            <div class="brand_name">NOKIA</div>
+           <textarea class="screen_display" id="screen_display"></textarea>
+            
+            <div class="button_keys">
+                <td>
+                    <tr rowspan="3"><input onclick= "show('mk')" type="button" style="background: rgb(15, 2, 0);" value="MENU"/></tr>
+                    <tr><input style="border-radius: 0 0 20px 20px; background: rgb(1, 27, 39);" type="button" value="UP"/></tr>
+                    <tr><input type="button" onclick="del();" value="BACK"  style="background:rgb(15, 2, 0);"/></tr>
+               </td>
+               <td>
+                    <tr rowspan="3"><input  type="button" style="border-radius: 0 30px 30px 0; background: rgb(0, 14, 0);" onclick= "show('mk')" type="button" value="S"/></tr>
+                    <tr><input type="button" style="border-radius: 100px;" onclick="connectButton();" value="OK"/></tr>
+                    <tr><input type="button" style="border-radius: 30px 0 0 30px; background: rgb(0, 14, 0);" type="button" onclick="welcomeScreen()" id="on" value="ON"/></tr>
+                </td>
+                <td>
+                    <tr><input type="button" id="send" style="background: rgb(8, 58, 8);" onclick = "sendKey()" value="SEND"/></tr>
+                    <tr><input style="border-radius: 20px 20px 0 0; background: rgb(1, 27, 39);" type="button" value="DOWN"/></tr>
+                    <tr><input type="button" onclick = "cancelKey()" style="background:rgb(218, 17, 17);" value="END"/></tr>
+                </td>
+               
+                <td>
+                    <tr><input type="button" onclick= "show('1')" value="1"/></tr>
+                    <tr><input type="button" onclick= "show('2')" value="2"/></tr>
+                    <tr><input type="button" onclick= "show('3')" value="3"/></tr>
+                </td>
+                
+                <td>
+                    <tr><input type="button" onclick= "show('4')" value="4"/></tr>
+                    <tr><input type="button" onclick= "show('5')" value="5"/></tr>
+                    <tr><input type="button" onclick= "show('6')" value="6"/></tr>
+                </td>
+                <td>
+                    <tr><input type="button" onclick= "show('7')" value="7"/></tr>
+                    <tr><input type="button" onclick= "show('8')" value="8"/></tr>
+                    <tr><input type="button" onclick= "show('9')" value="9"/></tr>
+                </td>
+                <td>
+                    <tr><input style="border-radius: 0px 0px 20px 20px;" onclick= "show('*')" type="button" value="*"/></tr>
+                    <tr><input type="button" onclick= "show('0')" value="0"/></tr>
+                    <tr><input style="border-radius: 0px 0px 20px 20px;" onclick= "show('#')" type="button" value="#"/></tr>
+                </td>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="./phone.js"></script>
+</html>
